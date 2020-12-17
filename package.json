@@ -1,0 +1,40 @@
+{
+	"id":"opener",
+	"name":"{{LNG['opener.meta.name']}}",
+	"title":"{{LNG['opener.meta.title']}}",
+	"version":"1.42",
+	"category":"file",
+	"source":{
+		"icon":"{{pluginHost}}static/images/icon.png"
+	},
+	"description":"{{LNG['opener.meta.desc']}}",
+	"auther":{
+		"copyright":"kodcloud",
+		"homePage":"http://kodcloud.com"
+	},
+	"meta":{
+		"needNetwork": 1
+	},
+	"networkDesc": "{{LNG['opener.meta.netwrokDesc']}}<br/>{{LNG['opener.meta.netwrokUrl']}}: <span class='blue-6'>https://www.idocv.com/</span>",
+	"configItem":{
+		"pluginAuth":{
+			"type":"userSelect",
+			"value":{"all":1},
+			"display":"{{LNG['admin.plugin.auth']}}",
+			"desc":"{{LNG['admin.plugin.authDesc']}}",
+			"require":1
+		},
+		"fileExt":{
+			"type":"tags",
+			"display":"{{LNG['admin.plugin.fileExt']}}",
+			"desc":"{{LNG['admin.plugin.fileExtDesc']}}",
+			"value":"doc,docx,rtf,xls,xlsx,wps,ppt,pptx,pps,.odt,ods,odp,ott,ots,otp,dxf,ps,eps,xps,psd,tif,tiff,bmp,svg,pages,ai,ttf,html,htm,xml,js,css,java,php,sql,ofd,jpg, jpeg, gif, png, bmp, tif, tiff,mp3, m4a, mid, wma,zip, rar, tar, 7z,mp4",
+		},
+		"fileSort":{
+			"type":"number",
+			"display":"{{LNG['admin.plugin.fileSort']}}",
+			"desc":"{{LNG['admin.plugin.fileSortDesc']}}",
+			"value":-1,
+		}
+	}
+}
